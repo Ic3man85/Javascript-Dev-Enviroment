@@ -12,12 +12,11 @@ install:
   - npm install
 
   #Post-install test scripts.
-  test_script:
-    #Ouput useful info for debugging.
-    - node --version
-    - npm --version
+test_script:
+  #Ouput useful info for debugging.
+  - node --version
+  - npm --version
     #run tests
-    - npn test
-
+  - npn test
     # Dont actually build.
-    build: off
+build: off
